@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Symbolism of Vishwaroopa Darshanam</title>
-        <style>
+    <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300&display=swap');
 
 body {
@@ -14,7 +14,7 @@ body {
     background: radial-gradient(circle, #0a0a0a, #1a1a1a);
     color: #FFD700;
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Static Starry Background */
@@ -27,7 +27,7 @@ body::before {
     height: 100%;
     background: url('https://wallpaperset.com/w/full/d/8/4/109181.jpg') no-repeat center center/cover;
     opacity: 0.3;
-    z-index: -1;
+    z-index: -2;
 }
 
 /* Animated Twinkling Stars */
@@ -51,8 +51,9 @@ header {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.4);
+    text-transform: uppercase;
 }
 
 /* Content Container */
@@ -61,6 +62,7 @@ header {
     margin: auto;
     padding: 20px;
     line-height: 1.8;
+    text-align: justify;
 }
 
 /* Section Styling */
@@ -73,7 +75,7 @@ header {
 
 .section:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
 }
 
 /* Expanded Content (Initially Hidden) */
@@ -89,32 +91,56 @@ footer {
     padding: 15px;
     font-size: 0.9em;
     background: rgba(0, 0, 0, 0.7);
-    box-shadow: 0px -4px 10px rgba(255, 215, 0, 0.3);
+    box-shadow: 0px -4px 15px rgba(255, 215, 0, 0.4);
 }
+
 pre {
-font-size: 2em;
+    font-size: 1.8em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
 }
-</style>
+
+/* Smooth Fade-In Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Image Styling */
+img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+    </style>
 </head>
 <body>
-    <header>Symbolism</header>
-    <div class="container">
+    <header class="fade-in">Symbolism of Vishwaroopa Darshanam</header>
+    <div class="container fade-in">
         <p>The Vishwaroopa is a profound symbol of cosmic unity, time (Kāla), and divine omnipresence. It represents the infinite power of creation, preservation, and destruction, showing that all beings, from the smallest creatures to the mightiest gods, exist within the Supreme. The countless faces, arms, and weapons signify the multifaceted nature of the universe, while the terrifying aspects, like devouring warriors, reveal the unstoppable force of time and destiny. Arjuna’s awe and fear symbolize human ego dissolving before the divine reality, teaching that surrender to the Supreme brings true wisdom and liberation.</p>
-        <p><h2>Sloka from Bhagavad Gita (Chapter 11, Verse 32)</h2>
-<pre>
+        
+        <h2>Sloka from Bhagavad Gita (Chapter 11, Verse 32)</h2>
+        <pre>
 श्रीभगवानुवाच |
 कालोऽस्मि लोकक्षयकृत्प्रवृद्धो लोकान्समाहर्तुमिह प्रवृत्त: |
 ऋतेऽपि त्वां न भविष्यन्ति सर्वे येऽवस्थिताः प्रत्यनीकेषु योधाः ||
-</pre>
-<b>
-🔹 Meaning:</b>
-Lord Krishna said: "I am Time, the great destroyer of the worlds. I have come to consume all beings. Even without you, all the warriors arrayed in battle shall perish."
-
-        </p>
+        </pre>
+        <b>🔹 Meaning:</b>
+        <p>Lord Krishna said: "I am Time, the great destroyer of the worlds. I have come to consume all beings. Even without you, all the warriors arrayed in battle shall perish."</p>
+        
         <img src="images/symbolism.jpg" alt="Symbolism of Vishwaroopa">
         <br><br>
-        <a href="index.html">⬅ Back to Main Page</a>
+        <a href="index.html" style="color: #FFD700; font-size: 1.2em; text-decoration: none;">⬅ Back to Main Page</a>
     </div>
+    <div class="stars"></div>
 </body>
 </html>
-
