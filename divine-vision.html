@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Divine Vision</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #0a0a0a, #1a1a1a);
+    color: #FFD700;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Static Starry Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://wallpaperset.com/w/full/d/8/4/109181.jpg') no-repeat center center/cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Animated Twinkling Stars */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: twinkle 2s infinite alternate;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.5; transform: translateY(0px); }
+    100% { opacity: 1; transform: translateY(-2px); }
+}
+
+/* Header */
+header {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Content Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Section Styling */
+.section {
+    padding: 30px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Expanded Content (Initially Hidden) */
+.expanded {
+    font-size: 1.2em;
+    color: #FFD700;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px -4px 10px rgba(255, 215, 0, 0.3);
+}
+pre {
+font-size: 2em;
+}
+</style>
+</head>
+<body>
+    <header>The Divine Vision</header>
+    <div class="container">
+        <p>Divine Vision (Divya Drishti) is the spiritual insight granted by the Supreme Being, allowing one to perceive the true, infinite nature of existence beyond the limitations of human senses. In the Bhagavad Gita (Chapter 11, Verse 8), Lord Krishna tells Arjuna that his normal vision cannot behold the Vishwaroopa, and only with Divine Eyes can he witness this cosmic form. This vision represents higher wisdom, spiritual enlightenment, and the ultimate truth that transcends material perception. It signifies that true realization comes not through the eyes, but through divine grace and inner awakening</p>
+        <p><h2>Sloka from Bhagavad Gita (Chapter 11, Verse 8)</h2>
+<pre>
+न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा |
+दिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम् ||
+</pre>
+<b>🔹 Meaning (Bhavam):</b>
+"But you cannot see Me with your ordinary eyes. Therefore, I grant you Divine Vision. Behold My supreme, majestic, and yogic opulence!"
+</p>
+        <img src="images/divine-vision.jpg" alt="Divine Vision of Krishna">
+        <br><br>
+        <a href="index.html">⬅ Back to Main Page</a>
+    </div>
+</body>
+</html>
+

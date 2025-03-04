@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwaroopa Darshanam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle, #0a0a0a, #1a1a1a);
+            color: #FFD700;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        /* Static Starry Background */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://wallpaperset.com/w/full/d/8/4/109181.jpg') no-repeat center center/cover;
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        /* Animated Twinkling Stars */
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            animation: twinkle 2s infinite alternate;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0.5; transform: translateY(0px); }
+            100% { opacity: 1; transform: translateY(-2px); }
+        }
+        
+        header {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        .section {
+            padding: 30px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+        .expanded {
+            font-size: 1.2em;
+            color: #FFD700;
+            margin-top: 10px;
+            display: none;
+        }
+        footer {
+            padding: 15px;
+            font-size: 0.9em;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px -4px 10px rgba(255, 215, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <header>Vishwaroopa Darshanam</header>
+    <div class="container">
+        <div class="section" onclick="toggleInfo(this)" ondblclick="openPage('what-is.html')">
+            <h2>What is Vishwaroopa Darshanam?</h2>
+            <p>The grand cosmic vision revealed by Lord Krishna to Arjuna, displaying his infinite form.</p>
+            <p class="expanded">This divine vision represents the entirety of existence, where Krishna manifests as the universe itself.</p>
+        </div>
+        <div class="section highlight" onclick="toggleInfo(this)" ondblclick="openPage('divine-vision.html')">
+            <h2>The Divine Vision</h2>
+            <p>Krishna appeared with countless faces, arms, and celestial brilliance, beyond time and space.</p>
+            <p class="expanded">Arjuna witnessed countless deities, sages, and cosmic wonders within Krishna’s divine form.</p>
+        </div>
+        <div class="section" onclick="toggleInfo(this)" ondblclick="openPage('symbolism.html')">
+            <h2>Symbolism</h2>
+            <p>Represents the ultimate truth, unity of the universe, and the power of time (Kāla).</p>
+            <p class="expanded">This form signifies that all beings exist within Krishna and are bound by the cycle of time.</p>
+        </div>
+    </div>
+    <footer> GLIMPSES Of GLORIOUS INDIA Project | Designed with Devotion  </footer>
+       <footer> <PRE STYLE="font-size:1.5em">TEAM MEMBERS:
+                                1)JYOTHSNA V
+                                2)RAAMAN NAMPUTHIRI
+                                3)DEVI SRI SOUMITH
+                                4)YOGESH JK </PRE></footer>
+    
+    <script>
+        function toggleInfo(element) {
+            let extraInfo = element.querySelector('.expanded');
+            if (extraInfo.style.display === 'block') {
+                extraInfo.style.display = 'none';
+            } else {
+                extraInfo.style.display = 'block';
+            }
+        }
+        function openPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
+
